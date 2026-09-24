@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff5f5;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(135deg, #c62828, #8e0000);
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+header h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 18px;
+}
+
+nav {
+  background: #7f0000;
+  text-align: center;
+  padding: 14px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 14px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h2 {
+  font-size: 34px;
+  color: #c62828;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.buttons {
+  margin-top: 25px;
+}
+
+.btn {
+  display: inline-block;
+  background: #c62828;
+  color: white;
+  padding: 14px 24px;
+  margin: 10px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #8e0000;
+  transform: scale(1.05);
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  width: 280px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card h3 {
+  color: #c62828;
+  margin-bottom: 10px;
+}
+
+.info, .form-section {
+  width: 85%;
+  max-width: 700px;
+  margin: 30px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.info h2 {
+  color: #c62828;
+  margin-bottom: 15px;
+}
+
+.info p, .info li {
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.info ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+form input, form button, select {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+button {
+  background: #c62828;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #8e0000;
+  transform: scale(1.02);
+}
+
+.result-box {
+  margin-top: 25px;
+  padding: 20px;
+  background: #ffe5e5;
+  border-left: 6px solid #c62828;
+  border-radius: 10px;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+footer {
+  text-align: center;
+  padding: 18px;
+  background: #c62828;
+  color: white;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 30px;
+  }
+
+  .hero h2 {
+    font-size: 26px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 8px;
+  }
+}

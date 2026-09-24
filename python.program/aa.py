@@ -1,0 +1,5 @@
+a=int(input("enter a value of a: "))
+b=int(input("enter a value of b: "))
+c=int(input("enter a value of c: "))
+print("the sum of a,b,c is: ",a+b+c)
+print("the average of a,b,c is: ",(a+b+c)/3)

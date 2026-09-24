@@ -1,0 +1,224 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Login Page */
+.login-page {
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  width: 320px;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.login-box h2 {
+  margin-bottom: 10px;
+}
+
+.login-box p {
+  color: #555;
+}
+
+.login-box input,
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.login-box input {
+  border: 1px solid #ccc;
+}
+
+.login-box button {
+  background: #4facfe;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.login-box button:hover {
+  background: #007bff;
+}
+
+.show-pass {
+  text-align: left;
+  font-size: 14px;
+  margin: 5px 0 10px;
+}
+
+.error-msg {
+  color: red;
+  font-size: 14px;
+}
+
+/* Dashboard */
+.dashboard-page {
+  background: #f4f7fb;
+  min-height: 100vh;
+  padding-bottom: 40px;
+}
+
+header {
+  background: #007bff;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header button {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+header button:hover {
+  background: #d93636;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  width: 220px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+.form-section,
+.list-section {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+.form-section h2,
+.list-section h2 {
+  margin-bottom: 20px;
+}
+
+form input,
+form select,
+form textarea,
+form button {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+form input,
+form select,
+form textarea {
+  border: 1px solid #ccc;
+}
+
+form textarea {
+  height: 100px;
+  resize: none;
+}
+
+form button {
+  background: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #218838;
+}
+
+/* Complaint Card */
+.complaint-card {
+  background: #f9f9f9;
+  padding: 18px;
+  margin: 15px 0;
+  border-left: 6px solid #007bff;
+  border-radius: 10px;
+}
+
+.complaint-card h3 {
+  margin: 0 0 10px;
+}
+
+.complaint-card p {
+  margin: 6px 0;
+}
+
+.complaint-actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.complaint-actions button {
+  width: auto;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+}
+
+.resolve-btn {
+  background: #28a745;
+}
+
+.pending-btn {
+  background: #ffc107;
+  color: black !important;
+}
+
+.delete-btn {
+  background: #dc3545;
+}
+
+.status {
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.resolved {
+  background: #d4edda;
+  color: #155724;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register - JeevanSetu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>📝 Donor Registration</h1>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="register.html">Register</a>
+    <a href="donor.html">Find Donor</a>
+    <a href="request.html">Request Blood</a>
+    <a href="volunteer.html">Volunteer</a>
+    <a href="about.html">About</a>
+  </nav>
+  <section class="form-section">
+    <form onsubmit="showMessage(event, 'Registration Successful!')">
+      <input type="text" placeholder="Full Name" required />
+      
+      <select required>
+        <option value="">Select Blood Group</option>
+        <option>A+</option>
+        <option>A-</option>
+        <option>B+</option>
+        <option>B-</option>
+        <option>O+</option>
+        <option>O-</option>
+        <option>AB+</option>
+        <option>AB-</option>
+      </select>
+      <input type="text" placeholder="Phone Number" required />
+      <input type="text" placeholder="Location" required />
+      <input type="email" placeholder="Email Address" required />
+      <input type="password" placeholder="Password" required />
+       <input type="confirm password" placeholder="confirm Password" required />
+      <button type="submit">Register</button>
+    </form>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
