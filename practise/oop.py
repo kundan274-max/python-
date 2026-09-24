@@ -332,11 +332,30 @@
 # e.display()
 # # Area of Circle Using Class 
 
-class Circle:
-    def __init__(self,radius):
-        self.radius=radius
-        def area(self):
-            return 3.14 * self.radius * self.radius
-radius = float(input("enter radius:"))
-c = Circle(radius)
-print("Area of circle=",c.area())
+# class Circle:
+#     def __init__(self,radius):
+#         self.radius=radius
+#         def area(self):
+#             return 3.14 * self.radius * self.radius
+# radius = float(input("enter radius:"))
+# c = Circle(radius)
+# print("Area of circle=",c.area())
+#complex number
+class Complex:
+    def getdata(self)
+       self.r = int(input("enter real number: "))
+       self.i = int(input("enter imaginary : "))
+    def calculate(self.c2):
+          self.r = self.r + c2.r
+          self.i =  self.i + c2.i
+     def display(self):
+         print("Real number : ", self.r)
+         print("imaginary number : ", self.i)
+         print(self.r,"+",self.i,"i")
+         c1.Complex()
+         c2.Complex()
+         c1.getdata()
+         c2.getdata()
+         c1.sum(c2)
+         c1.display()
+              
