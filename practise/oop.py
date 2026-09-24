@@ -1,4 +1,4 @@
-# # Create a Class and Object 
+# # Create a Class and Object
 # ## Create a class Student and take student name from user.
 
 # class Student:
@@ -11,7 +11,7 @@
 # s.name = input("Enter student name: ")
 
 # s.display()
-# # Constructor with User Input 
+# # Constructor with User Input
 # class Student:
 #     def __init__(self, name, age):
 #         self.name = name
@@ -50,7 +50,7 @@
 # s = Student(name, roll, marks)
 # s.display()
 
-# # Add Two Numbers Using Class 
+# # Add Two Numbers Using Class
 # class Calculator:
 #     def add(self, a, b):
 #         return a + b
@@ -63,7 +63,7 @@
 
 # print("Sum =", c.add(a, b))
 
-# # Calculator Using Class 
+# # Calculator Using Class
 # class Calculator:
 #     def add(self, a, b):
 #         return a + b
@@ -100,7 +100,7 @@
 
 # obj = Number()
 # obj.check(n)
-# # Find Factorial Using Class 
+# # Find Factorial Using Class
 # class Number:
 #     def factorial(self, n):
 #         fact = 1
@@ -131,7 +131,7 @@
 # obj = Number()
 
 # print("Largest =", obj.largest(a, b))
-# # Find Largest of Three Numbers 
+# # Find Largest of Three Numbers
 # class Number:
 #     def largest(self, a, b, c):
 #         if a >= b and a >= c:
@@ -162,7 +162,7 @@
 
 # obj = String()
 # obj.palindrome(text)
-# #Inheritance 
+# #Inheritance
 # # # Simple Inheritance
 # class Parent:
 #     def show(self):
@@ -193,7 +193,7 @@
 
 # s.get_name()
 # s.display()
-# # Student Result Using Inheritance 
+# # Student Result Using Inheritance
 # class Student:
 #     def get_data(self):
 #         self.name = input("Enter name: ")
@@ -216,7 +216,7 @@
 # r.get_data()
 # r.display()
 # ## Encapsulation
-# # Private Variable 
+# # Private Variable
 # class Student:
 #     def __init__(self):
 #         self.__marks = int(input("Enter marks: "))
@@ -230,7 +230,7 @@
 # s.display()
 
 
-# # Getter and Setter 
+# # Getter and Setter
 # class Student:
 #     def __init__(self):
 #         self.__marks = 0
@@ -281,7 +281,7 @@
 # d.sound()
 # c.sound()
 # #More Practical Questions
-# # Bank Account Program 
+# # Bank Account Program
 # class Bank:
 #     def __init__(self, name, balance):
 #         self.name = name
@@ -330,15 +330,13 @@
 # e = Employee(name, salary)
 
 # e.display()
-# # Area of Circle Using Class 
+# # Area of Circle Using Class
 
-# class Circle:
-#     def __init__(self,radius):
-#         self.radius=radius
-#         def area(self):
-#             return 3.14 * self.radius * self.radius
-# radius = float(input("enter radius:"))
-# c = Circle(radius)
-# print("Area of circle=",c.area())
-
-              
+class Circle:
+    def __init__(self,radius):
+        self.radius=radius
+        def area(self):
+            return 3.14 * self.radius * self.radius
+radius = float(input("enter radius:"))
+c = Circle(radius)
+print("Area of circle=",c.area())
