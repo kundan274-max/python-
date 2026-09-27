@@ -1,342 +1,359 @@
-# # Create a Class and Object
-# ## Create a class Student and take student name from user.
+# Create a Class and Object
+## Create a class Student and take student name from user.
 
-# class Student:
-#     def display(self):
-#         print("Student Name:", self.name)
+"""class Student:
+    def display(self):
+        print("Student Name:", self.name)
 
 
-# s = Student()
+s = Student()
 
-# s.name = input("Enter student name: ")
+s.name = input("Enter student name: ")
 
-# s.display()
-# # Constructor with User Input
-# class Student:
-#     def __init__(self, name, age):
-#         self.name = name
-#         self.age = age
+s.display()
+# Constructor with User Input
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 
-#     def display(self):
-#         print("Name:", self.name)
-#         print("Age:", self.age)
+    def display(self):
+        print("Name:", self.name)
+        print("Age:", self.age)
 
 
-# name = input("Enter name: ")
-# age = int(input("Enter age: "))
+name = input("Enter name: ")
+age = int(input("Enter age: "))
 
-# s = Student(name, age)
+s = Student(name, age)
 
-# s.display()
+s.display()"""
 
-# # Student Details
 
-# class Student:
-#     def __init__(self, name, roll, marks):
-#         self.name = name
-#         self.roll = roll
-#         self.marks = marks
+# Student Details
 
-#     def display(self):
-#         print("Name:", self.name)
-#         print("Roll:", self.roll)
-#         print("Marks:", self.marks)
+"""class Student:
+    def __init__(self, name, roll, marks):
+        self.name = name
+        self.roll = roll
+        self.marks = marks
 
+    def display(self):
+        print("Name:", self.name)
+        print("Roll:", self.roll)
+        print("Marks:", self.marks)
 
-# name = input("Enter name: ")
-# roll = int(input("Enter roll number: "))
-# marks = float(input("Enter marks: "))
 
-# s = Student(name, roll, marks)
-# s.display()
+name = input("Enter name: ")
+roll = int(input("Enter roll number: "))
+marks = float(input("Enter marks: "))
 
-# # Add Two Numbers Using Class
-# class Calculator:
-#     def add(self, a, b):
-#         return a + b
+s = Student(name, roll, marks)
+s.display()
 
+# Add Two Numbers Using Class
+class Calculator:
+    def add(self, a, b):
+        return a + b
 
-# a = int(input("Enter first number: "))
-# b = int(input("Enter second number: "))
 
-# c = Calculator()
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
 
-# print("Sum =", c.add(a, b))
+c = Calculator()
 
-# # Calculator Using Class
-# class Calculator:
-#     def add(self, a, b):
-#         return a + b
+print("Sum =", c.add(a, b))"""
 
-#     def subtract(self, a, b):
-#         return a - b
 
-#     def multiply(self, a, b):
-#         return a * b
+# Calculator Using Class
+"""class Calculator:
+    def add(self, a, b):
+        return a + b
 
-#     def divide(self, a, b):
-#         return a / b
+    def subtract(self, a, b):
+        return a - b
 
+    def multiply(self, a, b):
+        return a * b
 
-# a = float(input("Enter first number: "))
-# b = float(input("Enter second number: "))
+    def divide(self, a, b):
+        return a / b
 
-# c = Calculator()
 
-# print("Addition =", c.add(a, b))
-# print("Subtraction =", c.subtract(a, b))
-# print("Multiplication =", c.multiply(a, b))
-# print("Division =", c.divide(a, b))
-# # Check Even or Odd Using Class
-# class Number:
-#     def check(self, n):
-#         if n % 2 == 0:
-#             print("Even")
-#         else:
-#             print("Odd")
+a = float(input("Enter first number: "))
+b = float(input("Enter second number: "))
 
+c = Calculator()
 
-# n = int(input("Enter number: "))
+print("Addition =", c.add(a, b))
+print("Subtraction =", c.subtract(a, b))
+print("Multiplication =", c.multiply(a, b))
+print("Division =", c.divide(a, b))"""
 
-# obj = Number()
-# obj.check(n)
-# # Find Factorial Using Class
-# class Number:
-#     def factorial(self, n):
-#         fact = 1
+# Check Even or Odd Using Class
 
-#         for i in range(1, n + 1):
-#             fact = fact * i
+"""class Number:
+    def check(self, n):
+        if n % 2 == 0:
+            print("Even")
+        else:
+            print("Odd")
 
-#         return fact
 
+n = int(input("Enter number: "))
 
-# n = int(input("Enter number: "))
+obj = Number()
+obj.check(n)
+# Find Factorial Using Class
+class Number:
+    def factorial(self, n):
+        fact = 1
 
-# obj = Number()
+        for i in range(1, n + 1):
+            fact = fact * i
 
-# print("Factorial =", obj.factorial(n))
-# # Find Largest of Two Numbers
-# class Number:
-#     def largest(self, a, b):
-#         if a > b:
-#             return a
-#         else:
-#             return b
+        return fact
 
 
-# a = int(input("Enter first number: "))
-# b = int(input("Enter second number: "))
+n = int(input("Enter number: "))
 
-# obj = Number()
+obj = Number()
 
-# print("Largest =", obj.largest(a, b))
-# # Find Largest of Three Numbers
-# class Number:
-#     def largest(self, a, b, c):
-#         if a >= b and a >= c:
-#             return a
-#         elif b >= a and b >= c:
-#             return b
-#         else:
-#             return c
+print("Factorial =", obj.factorial(n))"""
 
+# Find Largest of Two Numbers
 
-# a = int(input("Enter first number: "))
-# b = int(input("Enter second number: "))
-# c = int(input("Enter third number: "))
+"""class Number:
+    def largest(self, a, b):
+        if a > b:
+            return a
+        else:
+            return b
 
-# obj = Number()
 
-# print("Largest =", obj.largest(a, b, c))
-# # Check Palindrome Using Class
-# class String:
-#     def palindrome(self, text):
-#         if text == text[::-1]:
-#             print("Palindrome")
-#         else:
-#             print("Not Palindrome")
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
 
+obj = Number()
 
-# text = input("Enter a string: ")
+print("Largest =", obj.largest(a, b))
+# Find Largest of Three Numbers
+class Number:
+    def largest(self, a, b, c):
+        if a >= b and a >= c:
+            return a
+        elif b >= a and b >= c:
+            return b
+        else:
+            return c
 
-# obj = String()
-# obj.palindrome(text)
-# #Inheritance
-# # # Simple Inheritance
-# class Parent:
-#     def show(self):
-#         print("This is Parent class")
 
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+c = int(input("Enter third number: "))
 
-# class Child(Parent):
-#     def display(self):
-#         print("This is Child class")
+obj = Number()
 
+print("Largest =", obj.largest(a, b, c))"""
 
-# obj = Child()
+# Check Palindrome Using Class
 
-# obj.show()
-# obj.display()
-# # Inheritance with User Input
-# class Person:
-#     def get_name(self):
-#         self.name = input("Enter name: ")
+"""class String:
+    def palindrome(self, text):
+        if text == text[::-1]:
+            print("Palindrome")
+        else:
+            print("Not Palindrome")
 
 
-# class Student(Person):
-#     def display(self):
-#         print("Student Name:", self.name)
+text = input("Enter a string: ")
 
+obj = String()
+obj.palindrome(text)
+#Inheritance
+# # Simple Inheritance
+class Parent:
+    def show(self):
+        print("This is Parent class")
 
-# s = Student()
 
-# s.get_name()
-# s.display()
-# # Student Result Using Inheritance
-# class Student:
-#     def get_data(self):
-#         self.name = input("Enter name: ")
-#         self.marks = float(input("Enter marks: "))
+class Child(Parent):
+    def display(self):
+        print("This is Child class")
 
 
-# class Result(Student):
-#     def display(self):
-#         print("Name:", self.name)
-#         print("Marks:", self.marks)
+obj = Child()
 
-#         if self.marks >= 40:
-#             print("Result: Pass")
-#         else:
-#             print("Result: Fail")
+obj.show()
+obj.display()"""
 
+# Inheritance with User Input
 
-# r = Result()
+"""class Person:
+    def get_name(self):
+        self.name = input("Enter name: ")
 
-# r.get_data()
-# r.display()
-# ## Encapsulation
-# # Private Variable
-# class Student:
-#     def __init__(self):
-#         self.__marks = int(input("Enter marks: "))
 
-#     def display(self):
-#         print("Marks:", self.__marks)
+class Student(Person):
+    def display(self):
+        print("Student Name:", self.name)
 
 
-# s = Student()
+s = Student()
 
-# s.display()
+s.get_name()
+s.display()
+# Student Result Using Inheritance
+class Student:
+    def get_data(self):
+        self.name = input("Enter name: ")
+        self.marks = float(input("Enter marks: "))
 
 
-# # Getter and Setter
-# class Student:
-#     def __init__(self):
-#         self.__marks = 0
+class Result(Student):
+    def display(self):
+        print("Name:", self.name)
+        print("Marks:", self.marks)
 
-#     def set_marks(self, marks):
-#         self.__marks = marks
+        if self.marks >= 40:
+            print("Result: Pass")
+        else:
+            print("Result: Fail")
 
-#     def get_marks(self):
-#         return self.__marks
 
+r = Result()
 
-# s = Student()
+r.get_data()
+r.display()"""
 
-# marks = int(input("Enter marks: "))
 
-# s.set_marks(marks)
+## Encapsulation
 
-# print("Marks =", s.get_marks())
-# # Polymorphism
-# # Method Overriding
-# class Animal:
-#     def sound(self):
-#         print("Animal makes sound")
+# Private Variable
 
+"""class Student:
+    def __init__(self):
+        self.__marks = int(input("Enter marks: "))
 
-# class Dog(Animal):
-#     def sound(self):
-#         print("Dog barks")
+    def display(self):
+        print("Marks:", self.__marks)
 
 
-# obj = Dog()
+s = Student()
 
-# obj.sound()
-# # Polymorphism with Two Classes
-# class Dog:
-#     def sound(self):
-#         print("Dog says Woof")
+s.display()
 
 
-# class Cat:
-#     def sound(self):
-#         print("Cat says Meow")
+# Getter and Setter
+class Student:
+    def __init__(self):
+        self.__marks = 0
 
+    def set_marks(self, marks):
+        self.__marks = marks
 
-# d = Dog()
-# c = Cat()
+    def get_marks(self):
+        return self.__marks
 
-# d.sound()
-# c.sound()
-# #More Practical Questions
-# # Bank Account Program
-# class Bank:
-#     def __init__(self, name, balance):
-#         self.name = name
-#         self.balance = balance
 
-#     def deposit(self, amount):
-#         self.balance = self.balance + amount
+s = Student()
 
-#     def withdraw(self, amount):
-#         if amount <= self.balance:
-#             self.balance = self.balance - amount
-#         else:
-#             print("Insufficient balance")
+marks = int(input("Enter marks: "))
 
-#     def display(self):
-#         print("Account Holder:", self.name)
-#         print("Balance:", self.balance)
+s.set_marks(marks)
 
+print("Marks =", s.get_marks())"""
 
-# name = input("Enter account holder name: ")
-# balance = float(input("Enter initial balance: "))
+# Polymorphism
 
-# b = Bank(name, balance)
+# Method Overriding
 
-# deposit = float(input("Enter deposit amount: "))
-# b.deposit(deposit)
 
-# withdraw = float(input("Enter withdrawal amount: "))
-# b.withdraw(withdraw)
+"""class Animal:
+    def sound(self):
+        print("Animal makes sound")
 
-# b.display()
-# # Employee Salary Program
-# class Employee:
-#     def __init__(self, name, salary):
-#         self.name = name
-#         self.salary = salary
 
-#     def display(self):
-#         print("Employee Name:", self.name)
-#         print("Salary:", self.salary)
+class Dog(Animal):
+    def sound(self):
+        print("Dog barks")
 
 
-# name = input("Enter employee name: ")
-# salary = float(input("Enter salary: "))
+obj = Dog()
 
-# e = Employee(name, salary)
+obj.sound()
+# Polymorphism with Two Classes
+class Dog:
+    def sound(self):
+        print("Dog says Woof")
 
-# e.display()
-# # Area of Circle Using Class
 
-class Circle:
-    def __init__(self,radius):
-        self.radius=radius
-        def area(self):
-            return 3.14 * self.radius * self.radius
-radius = float(input("enter radius:"))
-c = Circle(radius)
-print("Area of circle=",c.area())
+class Cat:
+    def sound(self):
+        print("Cat says Meow")
+
+
+d = Dog()
+c = Cat()
+
+d.sound()
+c.sound()"""
+
+#More Practical Questions
+# Bank Account Program
+
+"""class Bank:
+    def __init__(self, name, balance):
+        self.name = name
+        self.balance = balance
+
+    def deposit(self, amount):
+        self.balance = self.balance + amount
+
+    def withdraw(self, amount):
+        if amount <= self.balance:
+            self.balance = self.balance - amount
+        else:
+            print("Insufficient balance")
+
+    def display(self):
+        print("Account Holder:", self.name)
+        print("Balance:", self.balance)
+
+
+name = input("Enter account holder name: ")
+balance = float(input("Enter initial balance: "))
+
+b = Bank(name, balance)
+
+deposit = float(input("Enter deposit amount: "))
+b.deposit(deposit)
+
+withdraw = float(input("Enter withdrawal amount: "))
+b.withdraw(withdraw)
+
+b.display()"""
+
+# Employee Salary Program
+
+"""class Employee:
+    def __init__(self, name, salary):
+        self.name = name
+        self.salary = salary
+
+    def display(self):
+        print("Employee Name:", self.name)
+        print("Salary:", self.salary)
+
+
+name = input("Enter employee name: ")
+salary = float(input("Enter salary: "))
+
+e = Employee(name, salary)
+
+e.display()"""
+
+
+
+
+
