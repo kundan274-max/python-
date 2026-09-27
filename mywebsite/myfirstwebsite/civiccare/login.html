@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CivicCare Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="login-page">
+
+  <div class="login-box">
+    <h2>🔐 CivicCare Login</h2>
+    <p>Smart Complaint System</p>
+
+    <form onsubmit="loginUser(event)">
+      <input type="text" id="username" placeholder="Enter Username" required />
+      <input type="password" id="password" placeholder="Enter Password" required />
+
+      <div class="show-pass">
+        <input type="checkbox" onclick="togglePassword()"> Show Password
+      </div>
+
+      <button type="submit">Login</button>
+    </form>
+
+    <p id="loginMsg" class="error-msg"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

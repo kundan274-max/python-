@@ -1,0 +1,31 @@
+import java.util.*;
+
+class A {
+    int a, b;
+    void getData() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter two numbers:");
+        a = sc.nextInt();
+        b = sc.nextInt();
+    }
+}
+
+class B extends A {
+    int sum;
+    void calculate() {
+        sum = a + b;
+    }
+
+    void display() {
+        System.out.println("Sum = " + sum);
+    }
+}
+
+ class B1 {
+    public static void main(String args[]) {
+        B obj = new B();
+        obj.getData();
+        obj.calculate();
+        obj.display();
+    }
+}

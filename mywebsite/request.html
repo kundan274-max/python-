@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Request Blood - JeevanSetu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>🚨 Emergency Blood Request</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="register.html">Register</a>
+    <a href="donor.html">Find Donor</a>
+    <a href="request.html">Request Blood</a>
+    <a href="volunteer.html">Volunteer</a>
+    <a href="about.html">About</a>
+  </nav>
+
+  <section class="form-section">
+    <form onsubmit="showMessage(event, 'Blood Request Submitted Successfully!')">
+      <input type="text" placeholder="Patient Name" required />
+      
+      <select required>
+        <option value="">Select Blood Group</option>
+        <option>A+</option>
+        <option>A-</option>
+        <option>B+</option>
+        <option>B-</option>
+        <option>O+</option>
+        <option>O-</option>
+        <option>AB+</option>
+        <option>AB-</option>
+      </select>
+
+      <input type="text" placeholder="Hospital Name" required />
+      <input type="text" placeholder="Location" required />
+      <input type="text" placeholder="Contact Number" required />
+      
+      <select required>
+        <option value="">Select Urgency</option>
+        <option>High</option>
+        <option>Medium</option>
+        <option>Low</option>
+      </select>
+
+      <button type="submit">Submit Request</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

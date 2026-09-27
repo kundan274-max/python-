@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CivicCare Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dashboard-page">
+  <header>
+    <h1>🏛️ CivicCare Dashboard</h1>
+    <button onclick="logout()">Logout</button>
+  </header>
+  <section class="stats">
+    <div class="card">
+      <h3>Total Complaints</h3>
+      <p id="totalComplaints">0</p>
+    </div>
+    <div class="card">
+      <h3>Pending</h3>
+      <p id="pendingComplaints">0</p>
+    </div>
+    <div class="card">
+      <h3>Resolved</h3>
+      <p id="resolvedComplaints">0</p>
+    </div>
+  </section>
+  <section class="form-section">
+    <h2>📝 Submit Complaint</h2>
+    <form id="complaintForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <select id="problemType" required>
+        <option value="">Select Problem Type</option>
+        <option>broken footpath</option>
+        <option>Street Light Issue</option>
+        <option>water supply issue</option>
+        <option>stray animal</option>
+        <option>electric issue</option>
+        <option>illegal  parking</option>
+        <option>open menhole</option>
+        <option>other</option>
+      </select>
+      <input type="text" id="area" placeholder="Enter Area / Location" required />
+      <textarea id="description" placeholder="Describe your complaint..." required></textarea>
+
+      <button type="submit">Submit Complaint</button>
+    </form>
+  </section>
+
+  <section class="list-section">
+    <h2>📋 Complaint List</h2>
+    <div id="complaintList"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

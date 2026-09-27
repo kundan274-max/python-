@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Civic Complaint System</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fa;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 90%;
+    max-width: 500px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+h2 {
+    text-align: center;
+    color: #333;
+}
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+button {
+    width: 100%;
+    padding: 12px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background: #0056b3;
+}
+.success {
+    color: green;
+    text-align: center;
+    display: none;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <h2>Civic Complaint Form</h2>
+    <form id="complaintForm">
+        <input type="text" id="name" placeholder="Enter your name" required>
+        <input type="text" id="location" placeholder="Enter location" required>
+        <select id="problemType" required>
+            <option value="">Select Problem Type</option>
+            <option>Road Damage</option>
+            <option>Potholes</option>
+            <option>Street Light Issue</option>
+            <option>Water Leakage</option>
+            <option>Water Supply Issue</option>
+            <option>Garbage Collection</option>
+            <option>Drainage Problem</option>
+            <option>Sewage Overflow</option>
+            <option>Traffic Issue</option>
+            <option>Illegal Parking</option>
+            <option>Air Pollution</option>
+            <option>Noise Pollution</option>
+            <option>Stray Animals</option>
+            <option>Broken Footpath</option>
+            <option>Electric Issue</option>
+            <option>Open Manhole</option>
+            <option>Other</option>
+        </select>
+        <textarea id="description" placeholder="Describe your problem..." required></textarea>
+        <input type="file" id="image">
+        <button type="submit">Submit Complaint</button>
+    </form>
+    <p class="success" id="successMsg">Complaint Submitted Successfully ✅</p>
+</div>
+<script>
+document.getElementById("complaintForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    let name = document.getElementById("name").value;
+    let location = document.getElementById("location").value;
+    let problem = document.getElementById("problemType").value;
+    if(name === "" || location === "" || problem === "") {
+        alert("Please fill all required fields!");
+        return;
+    }
+    document.getElementById("successMsg").style.display = "block";
+    document.getElementById("complaintForm").reset();
+});
+</script>
+</body>
+</html>

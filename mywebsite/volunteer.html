@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Volunteer - JeevanSetu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>🤝 Volunteer Registration</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="register.html">Register</a>
+    <a href="donor.html">Find Donor</a>
+    <a href="request.html">Request Blood</a>
+    <a href="volunteer.html">Volunteer</a>
+    <a href="about.html">About</a>
+  </nav>
+
+  <section class="form-section">
+    <form onsubmit="showMessage(event, 'Volunteer Registered Successfully!')">
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Phone Number" required />
+      <input type="text" placeholder="Location" required />
+
+      <select required>
+        <option value="">Availability</option>
+        <option>Available Now</option>
+        <option>Available Today</option>
+        <option>Available This Week</option>
+      </select>
+
+      <button type="submit">Join as Volunteer</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
